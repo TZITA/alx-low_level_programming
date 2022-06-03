@@ -3,16 +3,15 @@
 #include <time.h>
 /*more headers goes there*/
 
-int main(void)
 /**
  * main - Entry point
  *
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
+int main(void)
 {
 	int n;
 
-	/*generates random number*/
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
@@ -28,6 +27,6 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-
+	/*return comment*/
 	return (0);
 }
