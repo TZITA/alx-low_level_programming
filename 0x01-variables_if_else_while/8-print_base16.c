@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char ch = 0;
+	int ch;
 	char CH = 'A';
 
 	for (ch = 0; ch < 10; ch++)
