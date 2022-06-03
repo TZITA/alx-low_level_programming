@@ -9,9 +9,12 @@
 int main(void)
 {
 	char ch = 'a';
+	char blank_space = ' ';
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
+	putchar(blank_space);
+
 
 	return (0);
 }
