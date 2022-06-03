@@ -9,17 +9,12 @@
 int main(void)
 {
 	char CH;
-	char i;
+	int i;
 
-	for(i = 0; i < 10; i++)
-	{
-		putchar(i);
-	}
-
-	for(CH = 'a'; CH <= 'f'; CH++)
-	{
+	for (i = 0; i < 10; i++)
+		putchar((i % 10) + '0');
+	for (CH = 'a'; CH <= 'f'; CH++)
 		putchar(CH);
-	}
 
 	putchar('\n');
 	return (0);
