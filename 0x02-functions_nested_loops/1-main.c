@@ -1,5 +1,4 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -14,5 +13,3 @@ int main(void)
 	print_alphabet();
 	return (0);
 }
-
-#endif

@@ -1,21 +1,3 @@
-#ifndef MAIN_H
-#define MAIN_H
-#include <stdio.h>
 
-/**
- * main -Entry point
- *
- * Return: Always 0 (Success)
- */
-void print_alphabet(void)
-{
-	char ch = 'a';
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-	{
-		putchar(ch);
-	}
-		putchar('\n');
-}
-
-#endif
+void print_alphabet(void);
