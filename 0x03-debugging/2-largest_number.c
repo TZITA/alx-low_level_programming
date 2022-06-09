@@ -38,7 +38,7 @@ int largest_number(int a, int b, int c)
 	}
 	else
 	{
-		largest = c;
+		printf("All are the same.")
 	}
 
 	return (largest);
