@@ -8,7 +8,6 @@
 
 void reset_to_98(int *n)
 {
-	n = p;
-
-	*p = 98;
+	/* #n is intiger */
+	*n = 98;
 }
