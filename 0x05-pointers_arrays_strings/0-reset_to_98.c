@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
- * reset_to_98 - change n to 98
+/**
+ * reset_to_98 - resets the value of n to 98
  * @n: is the value inside the pointer *n
+ *
  * Return: Always 0
  */
 
