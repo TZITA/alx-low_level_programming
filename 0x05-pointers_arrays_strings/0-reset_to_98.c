@@ -3,7 +3,7 @@
 
 /*
  * reset_to_98 - change n to 98
- * n: is the value inside the pointer *n
+ * @n: is the value inside the pointer *n
  * Return: Always 0
  */
 
