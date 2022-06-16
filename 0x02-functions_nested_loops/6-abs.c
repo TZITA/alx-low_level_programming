@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * int _abs - outputs absolute value of any number
+ * _abs - outputs absolute value of any number
+ *
  * Return: 0
  */
 
