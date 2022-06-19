@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	long int a = 1;
-	long int b = 2;
-	long int c;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
+	unsigned long int c;
 	int i;
 
 	for (i = 0; i < 98; i++)
 	{
 		if (i < 97)
 		{
-			printf("%ld", a);
+			printf("%lu", a);
 			printf(", ");
 			c = a + b;
 			a = b;
@@ -25,7 +25,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%ld", a);
+			printf("%lu", a);
 		}
 	}
 	return (0);
