@@ -12,24 +12,21 @@ int main(void)
 	long int b = 2;
 	long int c;
 	int i;
-	long int sum = 0;
 
-	for (i = 0; i < 4000000; i++)
+	for (i = 0; i < 98; i++)
 	{
-		c = a + b;
-		if (c % 2 == 0)
+		if (i < 97)
 		{
-			sum = sum + c;
+			printf("%ld", a);
+			printf(", ");
+			c = a + b;
+			a = b;
+			b = c;
 		}
 		else
 		{
-			continue;
+			printf("%ld", a);
 		}
-
-		b = a;
-		c = b;
 	}
-	printf("%ld", sum);
-	printf("\n");
 	return (0);
 }
