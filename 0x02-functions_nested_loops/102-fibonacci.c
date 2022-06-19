@@ -9,17 +9,24 @@
 int main(void)
 {
 	int i;
-	int a = 1;
-	int b = 2;
-	int c;
+	long int a = 1;
+	long int b = 2;
+	long int c;
 
 	for (i = 0; i < 50; i++)
 	{
-		printf("%d", a);
-		printf(", ");
-		c = a + b;
-		a = b;
-		b = c;
+		if (i < 49)
+		{
+			printf("%ld", a);
+			printf(", ");
+			c = a + b;
+			a = b;
+			b = c;
+		}
+		else
+		{
+			printf("%ld", a);
+		}
 	}
 	return (0);
 }
