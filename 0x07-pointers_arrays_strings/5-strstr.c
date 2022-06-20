@@ -1,28 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
-/**
- * cpr - compares 2 strings
- * @s1: string1
- * @s2: string 2
- *
- * Return: True
- */
-int cpr(char *s1, char *s2)
-{
-	while (*s1 && *s2)
-	{
-		if (*s1 != *s2)
-		{
-			return (0);
-		}
-		s1++;
-		s2++;
-	}
-	return (*s2 == '\0');
-}
-
-
+#include <string.h>
 /**
  * _strstr - locates a substring
  * @haystack: string
@@ -33,13 +11,17 @@ int cpr(char *s1, char *s2)
 
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack != '\0')
+	char *tmp;
+
+	tmp = haystack;
+
+	while (*tmp)
 	{
-		if ((*haystack == *needle) && cpr(haystack, needle))
+		if (strncmp(tmp, needle, strlen(needle)) == 0)
 		{
-			return (haystack);
+			return (tmp);
 		}
-		haystack++;
+		tmp++;
 	}
 	return (NULL);
 }
