@@ -19,17 +19,9 @@ unsigned int _strspn(char *s, char *accept)
 		return (ptr);
 	}
 
-	while (*s)
+	while (*s && strchr(accept, *s++))
 	{
-		if (strchr(accept, *s))
-		{
-			return (ptr);
-		}
-		else
-		{
-			s++;
-			ptr++;
-		}
+		ptr++;
 	}
 	return (ptr);
 }
