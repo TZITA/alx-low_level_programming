@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _puts_recursion - puts a string
@@ -10,12 +9,8 @@
 
 void _puts_recursion(char *s)
 {
-	unsigned long int i = 0;
-
-	if (i > strlen(s))
-	{
+	if (*s == '\0')
 		return;
-	}
-	_putchar(s[i]);
-	_puts_recursion(*s[i + 1]);
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
