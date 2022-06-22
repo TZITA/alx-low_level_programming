@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * pow_recursion - returns the value of a number raised to number
+ * _pow_recursion - returns the value of a number raised to number
  * @x: number
  * @y: number
  *
