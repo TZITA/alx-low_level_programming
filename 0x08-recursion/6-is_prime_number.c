@@ -9,16 +9,18 @@
 
 int is_prime_number(int n)
 {
-	int div = 1000;
+	int div;
 
-	if (n <= 0)
+	if (div == 1)
 	{
-		return (0);
+		return (1);
 	}
-	else if (n % div == 0)
+	else
 	{
-		return (0);
+		if (n % div == 0)
+			return (0);
+		else
+			div = div - 1;
+		is_prime_number(n);
 	}
-	div++;
-	return (is_prime_number(n));
 }

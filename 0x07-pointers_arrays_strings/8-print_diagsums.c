@@ -28,10 +28,6 @@ void print_diagsums(int *a, int size)
 			{
 				sum2 = sum2 + *((int *)a + i * size + j);
 			}
-			else
-			{
-				continue;
-			}
 		}
 	}
 	printf("%d, %d\n", sum1, sum2);
