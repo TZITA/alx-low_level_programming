@@ -3,8 +3,10 @@
 
 /**
  * main - check the code
+ * @argc: number of arguments
+ * @argv: arguments
  *
- * Returns: Results
+ * Return: Always 0.
  */
 
 int main(int argc __attribute__((unused)), char *argv[])
