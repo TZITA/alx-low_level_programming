@@ -17,19 +17,26 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
-		for (i = 0; i < 5; i++)
+		if (**argv >= 0)
 		{
-			while (*argv[1] >= coins[i])
+			for (i = 0; i < 5; i++)
 			{
-				*argv[1] = *argv[1] - coins[i];
-				count++;
+				while (**argv >= coins[i])
+				{
+					**argv = **argv - coins[i];
+					count = count + 1;
+				}
+				if (**argv == 0)
+				{
+					break;
+				}
 			}
-			if (*argv[1] == 0)
-			{
-				break;
-			}
+			printf("%d\n", count);
 		}
-		printf("%d\n", count);
+		else
+		{
+			printf("0\n");
+		}
 	}
 	else
 	{
