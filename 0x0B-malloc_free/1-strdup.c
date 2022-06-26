@@ -21,7 +21,7 @@ char *_strdup(char *str)
 
 	if (str2 == NULL)
 	{
-		return ( (char *)NULL);
+		return ((char *)NULL);
 	}
 
 	s2_tmp = str2;
