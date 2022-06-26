@@ -12,7 +12,7 @@
 
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
+	unsigned int i = 0;
 	char *ptr;
 
 	ptr = (char *) malloc(sizeof(char) * size);
@@ -23,9 +23,10 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		for (i = 0; i < size; i++)
+		while (i < size)
 		{
 			_putchar(c);
+			i++:
 		}
 		return (ptr);
 	}
