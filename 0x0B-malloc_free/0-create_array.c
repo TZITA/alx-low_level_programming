@@ -13,8 +13,7 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
-
-	char __attribute__((unused)) *ptr;
+	char *ptr;
 
 	ptr = (char *) malloc(sizeof(char) * size);
 
