@@ -15,6 +15,9 @@ char **strtow(char *str)
 	int s_len = 0;
 	int i = 0;
 	int cnt = 0;
+	char **arr;
+	int w_len;
+	int w_dep;
 
 	while (str[i] != '\0')
 	{
@@ -25,14 +28,13 @@ char **strtow(char *str)
 		i++;
 	}
 
-	char **arr;
-	
 	arr = malloc((cnt + 2) * sizeof(char *));
 
 	int w_len = 0;
 	int cnt_index = 0;
 	int x = 0;
 	int a;
+	int c;
 
 	for (a = 0; a < (cnt + 2); a++)
 	{
@@ -44,9 +46,7 @@ char **strtow(char *str)
 			{
 				cnt_index = x;
 				arr[a] = malloc(w_len * sizeof(char));
-				int w_dep = 0;
-				int c;
-				
+
 				for (c = (cnt_index - w_len); c < cnt_index; c++)
 				{
 					chrctr = str[c];
