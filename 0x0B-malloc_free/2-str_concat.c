@@ -13,26 +13,22 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int s1_len;
-	int s2_len;
+	int s1_len = strlen(s1);
+	int s2_len = strlen(s2);
 	char *ptr;
+	int size  = s1_len + s2_len + 1;
 	int j = 0;
 
-	s1_len = strlen(s1);
-	s2_len = strlen(s2);
+	ptr = (char *)malloc(sizeof(char) * size);
 
-	ptr = (char *)malloc(sizeof(char) * (s1_len + s2_len + 1));
-
-	while (s1[j] != '\0')
+	for (j = 0; j < s1_len; j++)
 	{
-		s1[j] = ptr[j];
-		j++;
+		ptr[j] = s1[j];
 	}
-	while (s2[j] != '\0')
+	for (j = 0; j < s2_len; j++)
 	{
-		s2[j] = ptr[s1_len + j + 1];
-		j++;
+		ptr[s1_len + 1] = s2[j];
 	}
-	ptr[j] = '\0';
+	ptr[size - 1] = '\0';
 	return (0);
 }
