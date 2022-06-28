@@ -29,8 +29,7 @@ char **strtow(char *str)
 	}
 
 	arr = malloc((cnt + 2) * sizeof(char *));
-
-	int w_len = 0;
+	
 	int cnt_index = 0;
 	int x = 0;
 	int a;
@@ -49,7 +48,6 @@ char **strtow(char *str)
 
 				for (c = (cnt_index - w_len); c < cnt_index; c++)
 				{
-					chrctr = str[c];
 					arr[a][w_dep] = str [c];
 					w_dep++;
 				}
