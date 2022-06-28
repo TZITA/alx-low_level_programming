@@ -21,14 +21,23 @@ char *str_concat(char *s1, char *s2)
 
 	ptr = (char *)malloc(sizeof(char) * size);
 
+	if (s1 == NULL)
+	{
+		s1 = "";	
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	
 	for (j = 0; j < s1_len; j++)
 	{
 		ptr[j] = s1[j];
 	}
 	for (j = 0; j < s2_len; j++)
 	{
-		ptr[s1_len + 1] = s2[j];
+		ptr[s1_len + j] = s2[j];
 	}
 	ptr[size - 1] = '\0';
-	return (0);
+	return (ptr);
 }
