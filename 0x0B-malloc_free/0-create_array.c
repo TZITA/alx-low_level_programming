@@ -28,8 +28,6 @@ char *create_array(unsigned int size, char c)
 			ptr[i] = c;
 			i++;
 		}
-		return (ptr);
 	}
-
-	return (0);
+	return (ptr);
 }
