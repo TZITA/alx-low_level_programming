@@ -12,12 +12,16 @@
 
 char **strtow(char *str)
 {
-	int s_len = 0;
+	long unsigned int s_len = 0;
 	int i = 0;
 	int cnt = 0;
 	char **arr;
 	int w_len;
 	int w_dep;
+	int cnt_index = 0;
+	int x;
+	int a;
+	int c;
 
 	while (str[i] != '\0')
 	{
@@ -29,11 +33,6 @@ char **strtow(char *str)
 	}
 
 	arr = malloc((cnt + 2) * sizeof(char *));
-	
-	int cnt_index = 0;
-	int x = 0;
-	int a;
-	int c;
 
 	for (a = 0; a < (cnt + 2); a++)
 	{
