@@ -18,8 +18,14 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 	int size  = s1_len + s2_len + 1;
 	int j = 0;
+	int t_s = sizeof(char) * size;
 
-	ptr = (char *)malloc(sizeof(char) * size);
+	ptr = (char *)malloc(t_s);
+
+	if (!ptr && t_s)
+	{
+		return (NULL);
+	}
 
 	for (j = 0; j < s1_len; j++)
 	{
