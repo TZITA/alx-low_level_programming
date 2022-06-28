@@ -14,7 +14,6 @@
 char *argstostr(int ac, char **av)
 {
 	int i = 0;
-	int len = strlen(av[i]);
 	char *s;
 
 	s = malloc(ac * strlen(av[i]) * sizeof(char));
@@ -24,11 +23,11 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (i = 0; i < ac; i++)
+	while (i < ac)
 	{
-		for (i = 0; i < len; i++)
+		for (i = 0; i < strlen(av[i]); i++)
 		{
-			s[i] = *av[i];
+			s[] = **av;
 		}
 		printf("\n");
 	}
