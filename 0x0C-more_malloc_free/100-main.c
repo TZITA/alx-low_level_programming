@@ -52,6 +52,6 @@ int main(void)
 	}
 	simple_print_buffer(p, 98);
 	free(p);
-	retunr (0);
+	return (0);
 }
 
