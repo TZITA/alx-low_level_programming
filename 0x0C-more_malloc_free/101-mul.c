@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - entry point
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
 	int mult;
 
 	argc = 3;
-	if (argc != 3)
+	if (argc != 3 || sizeof(argv[1]) > 4 || sizeof(argv[2]) > 4)
 	{
 		printf("Error\n");
 		exit(98);
