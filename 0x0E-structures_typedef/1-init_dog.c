@@ -4,7 +4,6 @@
 
 /**
  * init_dog - entry point
- * struct dog - mem1
  * @d: mmm
  * @name: mem2
  * @age: mem3
