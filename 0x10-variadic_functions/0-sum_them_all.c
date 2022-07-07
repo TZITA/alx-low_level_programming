@@ -21,12 +21,13 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		return (0);
 	}
-
-	for (i = 0; i < n; i++)
+	else
 	{
-		sum = sum + va_arg(p, int);
+		for (i = 0; i < n; i++)
+		{
+			sum = sum + va_arg(p, int);
+		}
+		va_end(p);
 	}
-	va_end(p);
-
 	return (sum);
 }
