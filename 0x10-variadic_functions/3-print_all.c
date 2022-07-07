@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 
@@ -13,11 +14,19 @@ void print_all(const char * const format, ...)
 {
 	const char *p;
 	int i;
-	char *pp;
+	char *pp = 0;
 
 	va_list xx;
 
 	va_start(xx, format);
+	if (*format != 'c' || *format != 'i' || *format != 'f' || *format != 's')
+	{
+		exit(0);
+	}
+	if (pp == NULL)
+	{
+		pp = "(nil)";
+	}
 	for (p = format; *p != '\0'; p++)
 	{
 		while (*p != '%')
@@ -45,3 +54,4 @@ void print_all(const char * const format, ...)
 	printf("\n");
 	va_end(xx);
 }
+
