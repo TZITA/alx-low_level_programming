@@ -1,0 +1,1 @@
+Tasks regarding veriadic functions
