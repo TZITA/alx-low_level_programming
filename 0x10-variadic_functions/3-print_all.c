@@ -27,29 +27,28 @@ void print_all(const char * const format, ...)
 	{
 		pp = "(nil)";
 	}
-	for (p = format; *p != '\0'; p++)
+	
+
+	while (*p != '%')
 	{
-		while (*p != '%')
-		{
-			printf("%d", *p);
-			p++;
-		}
+		printf("%d", *p);
 		p++;
-		switch(*p)
-		{
-			case 'c': i = va_arg(xx, int);
-				  printf("%c", i);
-				  break;
-			case 'i': i = va_arg(xx, int);
-				  printf("%d", i);
-				  break;
-			case 'f': i = va_arg(xx, int);
-				  printf("%d", i);
-				  break;
-			case 's': pp = va_arg(xx, char *);
-				  printf("%s", pp);
-				  break;
-		}
+	}
+	p++;
+	switch(*p)
+	{
+		case 'c': i = va_arg(xx, int);
+			  printf("%c", i);
+			  break;
+		case 'i': i = va_arg(xx, int);
+			  printf("%d", i);
+			  break;
+		case 'f': i = va_arg(xx, int);
+			  printf("%d", i);
+			  break;
+		case 's': pp = va_arg(xx, char *);
+			  printf("%s", pp);
+			  break;
 	}
 	printf("\n");
 	va_end(xx);
