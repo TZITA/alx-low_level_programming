@@ -64,11 +64,11 @@ char *convert(unsigned int num, int base)
 	pointer = &buffer[49];
 	*pointer = '\0';
 
-	do
+	while(num != 0)
 	{
 		*--pointer = Representation[num % base];
 		num /= base;
-	}while(num != 0);
+	}
 
 	return (pointer);
 }
