@@ -55,3 +55,20 @@ void print_all(const char * const format, ...)
 	va_end(xx);
 }
 
+char *convert(unsigned int num, int base)
+{
+	static char Representation[] = "0123456789ABCDEF";
+	static char buffer[50];
+	char *pointer;
+
+	pointer = &buffer[49];
+	*pointer = '\0';
+
+	do
+	{
+		*--pointer = Representation[num % base];
+		num /= base;
+	}while(num != 0);
+
+	return (pointer);
+}
