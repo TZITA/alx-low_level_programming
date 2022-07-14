@@ -22,7 +22,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (*head == NULL)
 	{
 		*head = new_node;
-		printf("[%u] %s\n", new_node->len, n);
 	}
 	else
 	{
@@ -30,8 +29,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 		while (last_node->next != NULL)
 		{
-		last_node = last_node->next;
-		printf("[%u] %s\n", new_node->len, n);
+			last_node = last_node->next;
 		}
 		last_node->next = new_node;
 	}
