@@ -1,15 +1,23 @@
 section .text
-	global _start
-_start:
-	mov edx, len
-	mov ecx, msg
-	mov edx, 1
-	mov eax, 4
-	int 0x80
-	
-	mov eax, 1
-	int 0x080
+    default rel
+    extern printf
+    global main
 
+main:
+    push rbp
+    mov	rdi, fmt
+    mov	rsi, message
+    mov	rax, 0
+
+    call printf wrt ..plt
+
+    
+
+    pop rbp
+
+    mov	rax,0
+
+    ret	
 section .data
-	msg db "Hello, Holberton",0xa
-	len equ $ -msg
+    message:  db        "Hello, holberton", 10, 0
+    fmt:    db "%s", 10, 0
