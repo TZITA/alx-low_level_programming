@@ -5,9 +5,8 @@
  * Return: Nothing.
  */
 
-void firstPrint(void) __attribute__((constructor));
-
-void firstPrint(void)
+void firstPrint() __attribute__((constructor));
+void firstPrint()
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
