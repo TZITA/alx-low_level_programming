@@ -19,5 +19,5 @@ main:
 
     ret	
 section .data
-    message:  db        "Hello, holberton", 10, 0
-    fmt:    db "%s", 10, 0
+    message:  db        "Hello, Holberton", 10, 0
+    fmt:      db "%s"
