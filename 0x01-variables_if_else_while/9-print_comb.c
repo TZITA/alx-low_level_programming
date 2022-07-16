@@ -21,7 +21,6 @@ int main(void)
 		if (i == 9)
 		{
 			putchar((i % 10) + '0');
-			putchar(' ');
 		}
 	}
 	return (0);
