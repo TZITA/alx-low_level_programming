@@ -10,8 +10,6 @@
 
 int _isupper(int c)
 {
-	int i;
-
 	if (c == 'A' || c == 'B' || c == 'C' || c == 'D' || c == 'E')
 	{
 		return (1);
