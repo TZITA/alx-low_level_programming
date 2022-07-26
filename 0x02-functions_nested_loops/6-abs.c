@@ -3,6 +3,7 @@
 
 /**
  * _abs - outputs absolute value of any number
+ * @r: int
  *
  * Return: 0
  */
