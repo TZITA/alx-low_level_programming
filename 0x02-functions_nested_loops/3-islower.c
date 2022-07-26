@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _islower - entry point
@@ -11,17 +12,16 @@
 int _islower(int c)
 {
 	int i;
+	char arr[26] = "abcdefghijklmnopqrstuvwxyz";
 
-	for (i = 'a'; i < 'z'; i++)
+	for (i = 0; i < 26; i++)
 	{
-		if (c == i)
+		if (c == arr[i])
 		{
 			_putchar('1');
-		}
-		else
-		{
-			_putchar('0');
+			exit(0);
 		}
 	}
+	_putchar('0');
 	return (0);
 }

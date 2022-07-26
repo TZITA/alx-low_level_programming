@@ -9,14 +9,10 @@
 
 int _abs(int r)
 {
-	if (r >= 0)
-	{
-		putchar(r);
-	}
-	else
+	if (r < 0)
 	{
 		r = r * -1;
-		putchar(r);
 	}
+	printf("%d\n", r);
 	return (0);
 }
