@@ -19,17 +19,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	fileo = open("filename", O_RDONLY);
+	fileo = open(filename, O_RDONLY);
 	if (fileo < 0)
 	{
 		return (0);
 	}
-
 	filer = read(fileo, c, letters);
-	write(filer, c, letters);
-	if (letters == 0)
+	if (filer < 0)
 	{
 		return (0);
 	}
-	return (filer);
+	return (write(STDOUT_FILENO, c, letters));
 }
