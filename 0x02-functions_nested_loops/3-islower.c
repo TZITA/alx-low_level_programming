@@ -11,23 +11,27 @@
 
 int _islower(int c)
 {
-	if ((c == 'a') | (c == 'b') | (c == 'c') | (c == 'd') | (c == 'e') | (c == 'f'))
+	if ((c == 'a') | (c == 'b') | (c == 'c') | (c == 'd') | (c == 'e'))
 	{
 		return (1);
 	}
-	else if ((c == 'g') | (c == 'h') | (c == 'i') | (c == 'j') | (c == 'k') | (c == 'l'))
+	else if ((c == 'g') | (c == 'h') | (c == 'i') | (c == 'j') | (c == 'k'))
 	{
 		return (1);
 	}
-	else if ((c == 'm') | (c == 'n') | (c == 'o') | (c == 'p') | (c == 'q') | (c == 'r'))
+	else if ((c == 'm') | (c == 'n') | (c == 'o') | (c == 'p') | (c == 'q'))
 	{
 		return (1);
 	}
-	else if ((c == 's') | (c == 't') | (c == 'u') | (c == 'v') | (c == 'w') | (c == 'x'))
+	else if ((c == 's') | (c == 't') | (c == 'u') | (c == 'v') | (c == 'w'))
 	{
 		return (1);
 	}
-	else if ((c == 'y') | (c == 'z'))
+	else if ((c == 'y') | (c == 'z') | (c == 'f'))
+	{
+		return (1);
+	}
+	else if ((c == 'l') | (c == 'r') | (c == 'x'))
 	{
 		return (1);
 	}
