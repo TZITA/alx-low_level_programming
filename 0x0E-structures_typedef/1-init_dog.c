@@ -16,7 +16,11 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
 	{
-		printf("My name is %s, and I am %.1f :) - Woof!", name, age);
+		struct dog *myd = NULL;
+
+		myd->name = name;
+		myd->age = age;
+		myd->owner = owner;
 	}
 	else
 	{
