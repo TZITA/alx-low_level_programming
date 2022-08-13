@@ -16,11 +16,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
 	{
-		struct dog *myd = NULL;
-
-		myd->name = name;
-		myd->age = age;
-		myd->owner = owner;
+		exit(0);
 	}
 	else
 	{
