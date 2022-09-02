@@ -12,7 +12,7 @@ int sum_dlistint(dlistint_t *head)
 	int sum = head->n;
 	dlistint_t *tmp;
 
-	if (head->next == NULL)
+	if (head == NULL)
 	{
 		return (0);
 	}
