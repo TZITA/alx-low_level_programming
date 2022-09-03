@@ -8,22 +8,23 @@
 
 int main(void)
 {
-	int i = 1;
+	int i;
+	int j;
 
-	while (i < 90)
+	for (i = 0; i < 9; i++)
 	{
-		if (i / 10)
+		for (j = i + 1; j < 10; j++)
 		{
-			putchar(i / 10 + '0');
+			putchar(i % 10 + '0');
+			putchar(j % 10 + '0');
+			if (i == 8 && j == 9)
+			{
+				continue;
+			}
+			putchar(',');
+			putchar(' ');
 		}
-		else
-		{
-			putchar('0');
-		}
-		putchar(i % 10 + '0');
-		putchar(',');
-		putchar(' ');
-		i++;
 	}
+	putchar('\n');
 	return (0);
 }
