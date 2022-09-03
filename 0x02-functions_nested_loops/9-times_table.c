@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * time_table - e p
+ * times_table - e p
  *
  * Return: Nothing
  */
@@ -19,7 +19,7 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-				p = i * j;	
+				p = i * j;
 				if (p < 10)
 				{
 					_putchar(' ');
