@@ -23,7 +23,7 @@ int main(void)
 		if (c % 2 == 0)
 		{
 			sum = sum + c;
-		}	
+		}
 		a = b;
 		b = c;
 	}
