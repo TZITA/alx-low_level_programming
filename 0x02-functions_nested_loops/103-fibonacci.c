@@ -8,10 +8,10 @@
 
 int main(void)
 {
-	long int a = 1;
-	long int b = 2;
-	long int c;
-	long int sum = 0;
+	unsigned long int a = 0;
+	unsigned long int b = 1;
+	unsigned long int c;
+	unsigned long int sum = 0;
 
 	while (1)
 	{
