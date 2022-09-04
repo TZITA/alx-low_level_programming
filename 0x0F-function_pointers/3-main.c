@@ -11,6 +11,8 @@ int main(int *argc, char *argv[])
 {
 	int a = atoi(argv[1]);
 	int b = atoi(argv[3])
+	char *p;
+	int final;
 
 	if (argc != 4)
 	{
@@ -22,11 +24,13 @@ int main(int *argc, char *argv[])
 		printf("Error\n");
 		return (99);
 	}
-	if ((argv[2] == "/" || argv[2] == "%") && arvgv[3] == 0)
+	if ((argv[2] == "/" || argv[2] == "%") && argv[3] == 0)
 	{
 		printf("Error\n");
 		return (100);
 	}
+	
+	p = get_op_func(argv[1]);
 	
 	return (0);
 }
