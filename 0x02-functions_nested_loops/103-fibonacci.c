@@ -11,25 +11,23 @@ int main(void)
 	long int a = 1;
 	long int b = 2;
 	long int c;
-	int i;
 	long int sum = 0;
 
-	for (i = 0; i < 4000000; i++)
+	while (1)
 	{
 		c = a + b;
+		if (c > 4000000)
+		{
+			break;
+		}
 		if (c % 2 == 0)
 		{
 			sum = sum + c;
 		}
-		else
-		{
-			continue;
-		}
-
-		b = a;
-		c = b;
+		
+		a = b;
+		b = c;
 	}
-	printf("%ld", sum);
-	printf("\n");
+	printf("%ld\n", sum);
 	return (0);
 }
