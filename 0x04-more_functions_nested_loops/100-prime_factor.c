@@ -11,6 +11,7 @@ int main(void)
 	long int n;
 	long int divisor = 2;
 	long int largFactor;
+
 	n = 612852475143;
 
 	while (n != 0)
