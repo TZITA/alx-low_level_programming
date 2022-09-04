@@ -4,6 +4,9 @@
 
 /**
  * main - entry point
+ * @argc: int
+ * @argv: parameter
+ *
  * Return: Always 0.
  */
 
