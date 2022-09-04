@@ -11,8 +11,8 @@ int main(void)
 	unsigned long int a = 0;
 	unsigned long int b = 1;
 	unsigned long int c;
-	unsigned long int h1;
-	unsigned long int h2;
+	unsigned long int h1, h2;
+	unsigned long int ah1, ah2, bh1, bh2;
 	int i;
 
 	for (i = 0; i < 92; i++)
