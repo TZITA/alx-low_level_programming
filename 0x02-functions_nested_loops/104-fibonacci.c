@@ -27,7 +27,7 @@ int main(void)
 	ah2 = a % 10000000000;
 	bh2 = b % 10000000000;
 
-	for (i = 93; i < 99; i ++)
+	for (i = 93; i < 99; i++)
 	{
 		h1 = ah1 + bh1;
 		h2 = ah2 + bh2;
