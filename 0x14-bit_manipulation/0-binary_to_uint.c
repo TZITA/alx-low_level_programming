@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int dec = 0;
 	unsigned int w = 1;
-	unsigned int rem;
+	int rem;
 
 	if (b == '\0')
 	{
