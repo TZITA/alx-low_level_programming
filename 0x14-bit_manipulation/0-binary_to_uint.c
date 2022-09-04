@@ -15,18 +15,23 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int dec = 0;
 	unsigned int w = 1;
 	unsigned int rem;
-	unsigned int bcon = atoi(b);
 
-	if (b == NULL)
+	if (b == '\0')
 	{
 		return (0);
 	}
-	while (bcon != 0)
+	for (rem = 0; b[rem];)
 	{
-		rem = bcon % 10;
-		dec = dec + rem*w;
-		bcon = bcon / 10;
-		w = w * 2;
+		rem++;
+	}
+	for (rem -= 1; rem >= 0; rem--)
+	{
+		if (b[rem] != '0' && b[rem] != '1')
+		{
+			return (0);
+		}
+		dec += (b[rem] - '0') * w;
+		w *= 2;
 	}
 	return (dec);
 }
