@@ -5,7 +5,7 @@
 /**
  * get_op_func - entry point
  * @s: sss
- * 
+ *
  * Return: Int.
  */
 
