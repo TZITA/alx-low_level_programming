@@ -11,11 +11,9 @@
 
 void print_binary(unsigned long int n)
 {
-	char n2 = n % 2;
-	
 	if (n > 1)
 	{
-		print_binary(n / 2);
+		print_binary(n >> 1);
 	}
-	_putchar(n2);
+	_putchar((n & 1) + '0');
 }
