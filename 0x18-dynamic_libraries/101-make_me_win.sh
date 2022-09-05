@@ -1,3 +1,3 @@
 #!/bin/bash
-LD_PRELOAD=d52e6c18e0723f5b025a75dea19ef365  gm
-echo "--> Please make me win!"
+wget https://github.com/svelezg/holbertonschool-low_level_programming/raw/master/0x18-dynamic_libraries/inject.so -P ../
+export LD_PRELOAD=../inject.so
