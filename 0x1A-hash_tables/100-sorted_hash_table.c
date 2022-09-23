@@ -129,7 +129,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
 	i = key_index((const unsigned char *)key, ht->size);
-	if (i >= het->size)
+	if (i >= ht->size)
 		return (NULL);
 
 	n = ht->shead;
