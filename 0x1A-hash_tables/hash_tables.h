@@ -6,7 +6,7 @@
 #include <string.h>
 
 /**
- * struct_hash_node_s - Node of a hash table
+ * struct hash_node_s - Node of a hash table
  * @key: The key, string
  * The key is unique in the HashTable
  * @value: The value corresponding to a key
