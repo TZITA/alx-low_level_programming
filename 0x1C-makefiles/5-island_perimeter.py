@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a function island_perimeter."""
 
+
 def island_perimeter(grid):
     """Returns the perimeter of the island.
     Args:
@@ -10,7 +11,6 @@ def island_perimeter(grid):
     height = len(grid)
     cnt = 0
     edges = 0
-
 
     for i in range(height):
         for j in range(width):
