@@ -13,9 +13,9 @@ int main(void)
 	int i;
 
 	printf("%lu, ", a);
-	for (i = 0; i < 98; i++)
+	for (i = 0; i < 97; i++)
 	{
-		if (i < 97)
+		if (i < 96)
 		{
 			c = a + b;
 			a = b;
