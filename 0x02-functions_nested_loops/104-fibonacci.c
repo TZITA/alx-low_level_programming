@@ -12,16 +12,18 @@ int main(void)
 	unsigned long int c;
 	int i;
 
+	printf("%lu, ", a);
 	for (i = 0; i < 98; i++)
 	{
 		if (i < 97)
 		{
 			c = a + b;
-			printf("%lu, ", a);
 			a = b;
 			b = c;
+			printf("%lu, ", a);
 		}
-		printf("%lu", a);
+		else
+			printf("%lu", a);
 	}
 	printf("\n");
 	return (0);
