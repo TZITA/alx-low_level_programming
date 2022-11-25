@@ -23,6 +23,6 @@ int main(void)
 		}
 		printf("%lu", a);
 	}
-
+	printf("\n");
 	return (0);
 }
