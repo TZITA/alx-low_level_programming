@@ -13,6 +13,6 @@ int _strlen(char *s)
 {
 	int l;
 
-	l = sizeof(*s) / 8;
+	l = sizeof(&s);
 	return (l);
 }
