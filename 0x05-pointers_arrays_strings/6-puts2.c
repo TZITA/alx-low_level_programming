@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
-#define N 10
 
 /**
  * puts2 -puts every other char in a string
@@ -12,11 +9,12 @@
 void puts2(char *str)
 {
 	int i;
+	int len = 0;
 
-	for (i = 0; i < N; i++)
-	{
-		if (str[i] % 2 == 0)
-			break;
-	}
-	_putchar(str[i]);
+	while (str[len] != '\0')
+		len++;
+
+	for (i = 0; i < len - 1; i = i + 2)
+		_putchar(str[i]);
+	_putchar('\n');
 }
