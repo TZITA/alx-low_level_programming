@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * print_listint - entry point
- * @h: Struct
+ * print_listint_safe - safely prints a linked list
+ * @head: head pointer
  *
  * Return: number of nodes
  */
