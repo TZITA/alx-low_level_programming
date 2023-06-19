@@ -3,9 +3,11 @@
 /**
  * free_listint_safe - free linked list safely
  * @h: head pointer of a linked list
+ *
+ * Return: the size of the list that was freed
  */
 
-void free_listint_safe(listint_t **h)
+size_t free_listint_safe(listint_t **h)
 {
 	listint_t *tmp;
 
@@ -15,4 +17,7 @@ void free_listint_safe(listint_t **h)
 		free(h);
 		h = tmp;
 	}
+
+	if (h == NULL)
+		return (NULL);
 }
