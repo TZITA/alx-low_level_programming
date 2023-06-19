@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * add_node_end - entry point
- * @head: structure
- * @str: string
+ * add_node_end - a function to add a node at the end
+ * @head: head double pointer
+ * @str: value of the node
  *
  * Return: Structure.
  */
@@ -13,6 +13,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	char *n;
 
 	list_t *new_node = malloc(sizeof(list_t));
+
+	if (new_node == NULL)
+		return (NULL);
 
 	n = strdup(str);
 
